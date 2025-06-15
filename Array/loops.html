@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+      //1. While loop
+      // let i = 0;
+      // while (i <= 100) {
+      //   console.log(i);
+      //   i++;
+      // }
+
+      //Non Standard conditions(it can run 1 time or even 1000 times we don't actually knows)
+      // let i = 0;
+      // while (i <= 1) {
+      //   console.log(i);
+      //   i = Math.random() * 2;
+      // }
+      // console.log("Final value of x is: " + i);
+
+      //2. Do wile loop (executes at least once)
+      // let a = 0;
+      // do {
+      //   console.log(a);
+      //   a++;
+      // } while (a <= 10);
+
+      //3. For loop
+      // for (let num = 1; num <= 10; num++) {
+      //   console.log(num);
+      // }
+
+      let nums = [2, 5, 4, 3, 6, 7, 4, 2];
+      let sum = 0;
+      for (let i = 0; i < nums.length; i++) {
+        sum = sum + nums[i];
+      }
+      console.log("Sum of the Array is: " + sum);
+
+      let sqrs = [];
+      for (let i = 0; i < nums.length; i++) {
+        sqrs[i] = nums[i] * nums[i];
+      }
+      console.log(sqrs);
+    </script>
+  </body>
+</html>
