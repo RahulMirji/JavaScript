@@ -37,6 +37,6 @@ function displayItems() {
     <button class = "btn-delete" onclick ="todoList.splice(${i},1); displayItems();">Delete</button>
     `;
   }
-  containerElement.innerHTML = newHTML;
+  containerElement.innerHTML = 
      
 } 
